@@ -15,11 +15,6 @@ namespace pnoa.Controllers
             _host = host;
         }
 
-        public IActionResult Index()
-        {
-            return Content(_host.ContentRootPath);
-        }
-
         [Route("/orientacionexterna/{foto}")]
         public Task<OrientacionExterna> Index(string foto)
         {
