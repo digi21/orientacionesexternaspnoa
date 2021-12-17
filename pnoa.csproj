@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="6.0.1" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <None Include="AT_bdat_hu30_MUR.db" CopyToOutputDirectory="Always" />
+  </ItemGroup>
+</Project>
