@@ -17,6 +17,12 @@ como por ejemplo:
 
 El micro servicio devuelve una cadena JSON con la información de la foto solicitada. Cualquier software con acceso de Internet puede obtener esta información, como la estación fotogramétrica digital [Digi3D.NET](https://www.digi21.net).
 
+A continuación la cadena JSON devuelta con la consulta anterior:
+
+```json
+{"x":600864.191049171,"y":4251077.12154873,"z":7825.87054110617,"omega":-0.0205568168298517,"phi":0.283337443362341,"kappa":-0.172895078365148}
+```
+
 ## Conversión de las bases de datos Access a SQLite
 
 El micro servicio está hospedado en un contenedor Docker en Linux, de manera que hemos tenido que convertir la base de datos Access a un formato de bases de datos compatible con Linux. Como es una prueba de concepto, hemos incluido la base de datos dentro de la propia solución en formato SQLite.
